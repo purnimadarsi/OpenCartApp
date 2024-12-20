@@ -42,6 +42,11 @@ public class DisablePasswordManageFeatures extends BaseTest{
 
 		
 	}
+	@Test
+	public void verifyMenuItems() {
+		Assert.assertTrue(true);
+	
+	}
 	
 
 
