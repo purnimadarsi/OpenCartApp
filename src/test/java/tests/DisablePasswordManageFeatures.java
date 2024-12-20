@@ -35,7 +35,7 @@ public class DisablePasswordManageFeatures extends BaseTest{
 		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("test112@gmail.com");
 		driver.findElement(By.cssSelector("#input-password")).sendKeys("Test@123");
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
-		//softAssert.assertTrue(driver.findElement(By.xpath("//img[@title='naveenopencart']")).isDisplayed());
+		softAssert.assertTrue(driver.findElement(By.xpath("//img[@title='naveenopencart']")).isDisplayed());
 		softAssert.assertTrue(driver.getPageSource().contains("My Account"),"The page does not contains My Account");
 		softAssert.assertAll();
 		Thread.sleep(5000);
